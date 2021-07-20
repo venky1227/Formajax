@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form>
+      <div>
+        <label>Name:</label>
+        <input type="textarea" id="name" placeholder="Name" /><br><br>
+      </div>
+      <div>
+        <label>Address:</label>
+        <textarea name="text" cols="20" rows="3" id="address" placeholder="Address"/></textarea><br><br>
+      </div>
+      <label class="gender">Gender</label>
+      <input type="radio" id="gender" value="male"> Male</input>
+      <input type="radio" id="gender" value="female"> Female</input>
+      <div><br>
+        <label for="age">Age:</label>
+        <label class="age"for="age"></label>
+            <select id="age" name="age">
+                <option value="select">Select Age</option>
+                <option value="18-24">18-24</option>
+                <option value="25-36">25-36</option>
+                <option value="37-50">37-50</option>
+            </select><br><br>
+      </div><br>
+      <button type="button" id="submitbutton">Submit</button>
+    </form>
+    <%-include('./partials/foot.html')-%>
+    <script src="/ajax/form.js"></script>
+  </body>
+</html>
