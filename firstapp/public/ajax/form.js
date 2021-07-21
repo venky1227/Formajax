@@ -6,7 +6,7 @@ $("#submitbutton").click(function () {
   alert("Submit button clicked");
   let name = $("#name").val();
   let address = $("#address").val();
-  let gender = $("#gender").val();
+  let gender = $("input[name=gender]:checked").val();
   let age = $("#age").val();
   let submit = {
     name: name,
