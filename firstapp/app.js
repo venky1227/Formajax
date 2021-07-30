@@ -8,6 +8,7 @@ var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 var formRouter = require("./routes/form");
 var venkyRouter = require("./routes/venky");
+var dateRouter = require("./routes/datevalidate")
 var app = express();
 
 // view engine setup
@@ -25,6 +26,7 @@ app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/abc", formRouter);
 app.use("/venky", venkyRouter);
+app.use("/datevalidate", dateRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
